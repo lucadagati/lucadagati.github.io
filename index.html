@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Luca D'Agati — IoT, Edge Cloud & Trustworthy Cyber-Physical Systems</title>
+<meta name="description" content="Luca D'Agati, researcher at the University of Messina: IoT and edge-cloud orchestration, industrial cyber-physical systems, networking, and trustworthy AI tooling.">
+<meta property="og:title" content="Luca D'Agati — IoT, Edge Cloud & Trustworthy CPS">
+<meta property="og:description" content="Researcher at the University of Messina. Cloud-to-edge IoT, industrial CPS, networking labs and open research code.">
+<meta property="og:type" content="website">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="#top">Luca D'Agati</a>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#expertise">Expertise</a>
+      <a href="#research">Research</a>
+      <a href="#projects">Projects</a>
+      <a href="#teaching">Teaching</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero wrap">
+    <p class="kicker">University of Messina · Messina, Italy</p>
+    <h1>I build and study systems that connect the physical world to the cloud — and make them dependable.</h1>
+    <p class="lead">Researcher in <strong>IoT and edge-cloud orchestration</strong>, <strong>industrial cyber-physical systems</strong> and <strong>trustworthy AI tooling</strong>. I turn research ideas into reproducible, well-documented open-source software and hands-on laboratories.</p>
+    <p class="cta">
+      <a class="btn primary" href="https://github.com/lucadagati">GitHub profile</a>
+      <a class="btn" href="https://unifind.unime.it/resource/person/161925">University profile</a>
+      <a class="btn" href="#projects">Selected projects</a>
+    </p>
+    <ul class="stats" aria-label="At a glance">
+      <li><strong>40</strong><span>public repositories</span></li>
+      <li><strong>9</strong><span>programming languages in daily use</span></li>
+      <li><strong>Cloud → Edge → Device</strong><span>full-stack scope</span></li>
+    </ul>
+  </section>
+
+  <section id="about" class="wrap">
+    <h2>About</h2>
+    <div class="cols">
+      <p>I work at the <strong>University of Messina</strong>, where my research sits at the intersection of <em>distributed systems</em>, the <em>Internet of Things</em> and <em>industrial automation</em>. My background is in cloud-based IoT infrastructures: my university thesis, developed with an industrial partner for the monitoring of electrical substations, combined an OpenStack cloud with the <strong>Stack4Things</strong> framework, embedded boards and a cross-platform mobile app talking Bluetooth Low Energy.</p>
+      <p>Since then I have extended that foundation towards <strong>edge orchestration</strong> (Kubernetes/k3s, Crossplane, WebAssembly), <strong>low-power wireless networking</strong> (LoRaWAN, RPL, Thread) and <strong>trustworthy AI for cyber-physical systems</strong>. I care about work that can be rerun by someone else: every repository below ships with installation steps, configuration tables, tests where possible and an honest list of limitations.</p>
+    </div>
+  </section>
+
+  <section id="expertise" class="wrap">
+    <h2>Expertise</h2>
+    <div class="grid">
+      <article class="card">
+        <h3>Cloud-to-edge IoT orchestration</h3>
+        <p>Stack4Things / IoTronic, OpenStack (Keystone, Nova, Neutron, Swift), Kubernetes and k3s, Crossplane, WebAssembly workloads on constrained nodes.</p>
+      </article>
+      <article class="card">
+        <h3>Industrial IoT &amp; CPS protocols</h3>
+        <p>CAN bus, MQTT, CoAP, WAMP, Web of Things, digital twins; design of execution-time safeguards for context-carrying actions in industrial systems.</p>
+      </article>
+      <article class="card">
+        <h3>Low-power &amp; wireless networking</h3>
+        <p>LoRaWAN (ChirpStack, roaming), RPL on Contiki-NG, OpenThread, SDN load balancing, Wireshark/Mininet-based experimentation.</p>
+      </article>
+      <article class="card">
+        <h3>Embedded &amp; hardware-in-the-loop</h3>
+        <p>Arduino and sensor/actuator integration, Renode and QEMU emulation, micro-ROS, ROS with WebAssembly, Raspberry&nbsp;Pi-class boards.</p>
+      </article>
+      <article class="card">
+        <h3>Trustworthy AI tooling</h3>
+        <p>Detection of AI-generated academic text (DeBERTa ensemble, benchmarked on RAID), local-LLM research assistants with citation guards, blinded human-rating studies.</p>
+      </article>
+      <article class="card">
+        <h3>Distributed ledgers</h3>
+        <p>Hyperledger Fabric chaincode and gateways for complementary-currency and energy-community platforms.</p>
+      </article>
+      <article class="card">
+        <h3>Full-stack &amp; DevOps</h3>
+        <p>Python (FastAPI, Flask), TypeScript/Angular/Ionic, React, Rust, Go, C/C++, Shell; Docker, CI-friendly project layouts, reproducible environments.</p>
+      </article>
+      <article class="card">
+        <h3>Teaching &amp; technical writing</h3>
+        <p>Step-by-step laboratories for networks, industrial IoT and computer-science fundamentals; training material for Stack4Things.</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="research" class="wrap">
+    <h2>Research activities</h2>
+    <ul class="timeline">
+      <li>
+        <h3>Execution-time validation for industrial CPS</h3>
+        <p>AIS/XAIR: a reference runtime for execution-time validation of context-carrying <em>action intents</em> in industrial cyber-physical systems. Runtime, experiments and frozen data are public.</p>
+        <p class="links"><a href="https://github.com/lucadagati/LD1-execution-gap-xair">LD1-execution-gap-xair</a></p>
+      </li>
+      <li>
+        <h3>Server-independent LoRaWAN roaming</h3>
+        <p>A bridge that lets devices roam across independent LoRaWAN network servers (ChirpStack with LWN-Simulator), consolidated as the reference implementation of a journal paper.</p>
+        <p class="links"><a href="https://github.com/lucadagati/lorawan-server-independent-roaming">lorawan-server-independent-roaming</a></p>
+      </li>
+      <li>
+        <h3>Human evaluation of CPS reasoning</h3>
+        <p>CPS-HumanBench: the web version of a blinded human rating study, available in Italian and English.</p>
+        <p class="links"><a href="https://github.com/lucadagati/LD4-humanbench-rating-study">LD4-humanbench-rating-study</a></p>
+      </li>
+      <li>
+        <h3>AI-generated text detection for academic writing</h3>
+        <p>An OR-ensemble of domain-tuned DeBERTa models that outperforms open detectors on Claude-generated text and on the RAID benchmark, with sentence highlighting, explanations and LaTeX tracked-changes tooling.</p>
+        <p class="links"><a href="https://github.com/lucadagati/ai-text-detector">ai-text-detector</a></p>
+      </li>
+      <li>
+        <h3>Research planning assistant</h3>
+        <p>“Idea in, verified research plan out”: open sources only, no API keys, local LLMs and a citation guard that rejects unverifiable references.</p>
+        <p class="links"><a href="https://github.com/lucadagati/Research_AI">Research_AI</a></p>
+      </li>
+      <li>
+        <h3>Stack4Things in the cloud-edge continuum</h3>
+        <p>Deployment and integration of Stack4Things with Kubernetes/k3s, Crossplane and WebAssembly, plus teaching material for the book <em>Assembling Smart Cyber-Physical Systems</em>.</p>
+        <p class="links">
+          <a href="https://github.com/lucadagati/s4t_crossplane_deployment">s4t_crossplane_deployment</a>
+          <a href="https://github.com/lucadagati/k3s-wasm-edge-orchestration">k3s-wasm-edge-orchestration</a>
+          <a href="https://github.com/lucadagati/AssemblyingCPS_training">AssemblyingCPS_training</a>
+        </p>
+      </li>
+    </ul>
+  </section>
+
+  <section id="projects" class="wrap">
+    <h2>Selected open-source projects</h2>
+    <p class="muted">Each repository has a full usage guide in its README.</p>
+    <div class="grid projects">
+      <a class="card link" href="https://github.com/lucadagati/iotronic"><h3>iotronic</h3><p>IoT resource management service for OpenStack clouds, ported to Python 3.12.</p><span class="tag">Python · OpenStack</span></a>
+      <a class="card link" href="https://github.com/lucadagati/openstack-stein-swift-installer"><h3>openstack-stein-swift-installer</h3><p>One-script all-in-one OpenStack Stein with Swift on Ubuntu 18.04.</p><span class="tag">Bash · OpenStack</span></a>
+      <a class="card link" href="https://github.com/lucadagati/openstack-yoga-installer"><h3>openstack-yoga-installer</h3><p>Idempotent, logged installer for an OpenStack Yoga controller node.</p><span class="tag">Bash · OpenStack</span></a>
+      <a class="card link" href="https://github.com/lucadagati/industrial-iot-protocol-labs"><h3>industrial-iot-protocol-labs</h3><p>Automated labs on CAN, MQTT, CoAP, WAMP and WoT with a one-command launcher.</p><span class="tag">Python · Education</span></a>
+      <a class="card link" href="https://github.com/lucadagati/computer-networks-labs"><h3>computer-networks-labs</h3><p>Step-by-step networking labs: sockets, TCP/UDP, Wireshark, Mininet, DNS, FTP, P2P.</p><span class="tag">Python · Docker · Education</span></a>
+      <a class="card link" href="https://github.com/lucadagati/andron-complementary-currency"><h3>andron-complementary-currency</h3><p>Complementary-currency platform: Ionic apps, Flask API and Hyperledger Fabric chaincode.</p><span class="tag">TypeScript · Fabric</span></a>
+      <a class="card link" href="https://github.com/lucadagati/andron-energy-community"><h3>andron-energy-community</h3><p>Blockchain-based energy-community management with a React dashboard.</p><span class="tag">JavaScript · Fabric</span></a>
+      <a class="card link" href="https://github.com/lucadagati/assembling-cps-chapter-16-iot-network-optimization"><h3>assembling-cps-chapter-16</h3><p>MST and capacity-constrained Steiner-tree algorithms for IoT networks, with tests and CLI.</p><span class="tag">Python · Algorithms</span></a>
+      <a class="card link" href="https://github.com/lucadagati/gazebo-steer-bot-track"><h3>gazebo-steer-bot-track</h3><p>Procedural slalom track generator for the steer_bot robot in Gazebo.</p><span class="tag">Python · ROS · Gazebo</span></a>
+      <a class="card link" href="https://github.com/lucadagati/arduino-covid19-access-control"><h3>arduino-covid19-access-control</h3><p>RFID/PIN access gate with proximity and temperature checks on Arduino.</p><span class="tag">C++ · Embedded</span></a>
+      <a class="card link" href="https://github.com/lucadagati/unitime-docker"><h3>unitime-docker</h3><p>Single-container UniTime timetabling system on Tomcat and MySQL.</p><span class="tag">Docker · Java</span></a>
+      <a class="card link" href="https://github.com/lucadagati/contiki-rpl-lab"><h3>contiki-rpl-lab</h3><p>Contiki-NG RPL laboratory for an Industrial IoT course.</p><span class="tag">C · Low-power IoT</span></a>
+    </div>
+  </section>
+
+  <section id="teaching" class="wrap">
+    <h2>Teaching &amp; community</h2>
+    <p>I design hands-on laboratories that students can run on their own laptop: each lab states its learning goals, gives exact commands, shows the expected output and ends with exercises. Topics include computer networks (transport, application layer, Wireshark, Mininet), industrial IoT protocols, low-power wireless (RPL, Thread) and programming fundamentals. I also maintain training material and code companions for the book <em>Assembling Smart Cyber-Physical Systems</em> (Stack4Things modules and chapters 13 and 16).</p>
+  </section>
+
+  <section id="contact" class="wrap">
+    <h2>Work with me</h2>
+    <p>Interested in research collaborations, edge-cloud or industrial-IoT projects, reproducible research software, or teaching material? Reach out through the University of Messina or GitHub.</p>
+    <p class="cta">
+      <a class="btn primary" href="https://unifind.unime.it/resource/person/161925">University of Messina profile</a>
+      <a class="btn" href="https://github.com/lucadagati">github.com/lucadagati</a>
+    </p>
+  </section>
+</main>
+
+<footer class="wrap foot">
+  <p>© <span id="y">2026</span> Luca D'Agati · University of Messina</p>
+</footer>
+<script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
